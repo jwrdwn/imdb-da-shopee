@@ -1,0 +1,19 @@
+
+/*
+vEscuro: #3D0000
+vMedio: #950101
+vClaro: #FF0000 */
+
+body {
+    background-color: #000000;
+    font-family: 'Inter', 'Open Sans', sans-serif;
+    color: whitesmoke;
+}
+
+.cabecalho ul {
+    list-style: none;
+}
+
+.elemento-cabecalho {
+    color: whitesmoke;
+}
