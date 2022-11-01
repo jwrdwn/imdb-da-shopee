@@ -1,19 +1,136 @@
 
 /*
-vEscuro: #3D0000
-vMedio: #950101
-vClaro: #FF0000 */
+aEscuro: #3D0000
+aMedio: #950101
+aClaro: ##F6C800 */
 
-body {
-    background-color: #000000;
-    font-family: 'Inter', 'Open Sans', sans-serif;
-    color: whitesmoke;
+:root {
+    --primary-color: #F6C800;
 }
 
-.cabecalho ul {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: black;
+    color: #cccccc;
+}
+
+ul {
     list-style: none;
 }
 
-.elemento-cabecalho {
-    color: whitesmoke;
+h1, h2, h3, h4 {
+    color: white;
 }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+.showcase {
+    width: 100%;
+    height: 94vh;
+    position: relative;
+    background: url('../images/Background.png') no-repeat center center/cover;
+}
+
+.showcase::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0, 0.6);
+    box-shadow: inset 120px 100px 250px black, inset -120px -100px 250px black;
+}
+
+.showcase-top {
+    position: relative;
+    height: 90px;
+    z-index: 2;
+}
+
+.showcase-top img {
+    width: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.showcase-top a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.showcase-content {
+    position: relative;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 15rem;
+    z-index: 2;
+}
+
+.showcase-content h1 {
+    font-weight: 900;
+    font-size: 5.2rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.showcase-content p {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    max-width: 100%;
+    margin: 1rem auto;
+    font-size: 1rem;
+    text-align: center;
+    background: #000000;
+}
+
+.footer a {
+    color: #999;
+    font-size: 1rem;
+    transition: 0.4s;
+    z-index: 2;
+} 
+
+.footer a:hover {
+    color: #fff;
+} 
+
+.footer p {
+    margin-bottom: 1.5rem;
+}
+
+
